@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #1C8EF9 !important;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 700;
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 600;
+  font-family: 'Sora', sans-serif;
+}
+
+body, html, .App, #root, .customBox {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(2, 6, 87, 0.2);
+}
+
+.customBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.custombox {
+  width: 40vw;
+  height: auto;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(2, 6, 87, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.customBox .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.customBox h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.receiver {
+  background: #1C8EF9;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50%;
+  transform: rotate3d(5, 7, 5, 12deg);
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  top: -1.6rem;
+  right: -3.0rem;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+input {
+  border: none;
+  padding: 0.5rem 0.1rem;
+  width: 100%;
+  border-radius: 2px;
+  border-bottom: 1px solid #eee;
+  transition: all 0.5s;
+}
+
+input:focus {
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+  width: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.text {
+  text-align: center;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding-left: 30px;
+  margin-right: 3%;
+}
+
+.conversationBox {
+  height: 67vh;
+  margin: -5px;
+  border: 5px solid #1C8EF9;
+  border-radius: 15px;
+  position: relative;
+}
+
+.conversationInterior {
+  position: absolute;
+  top: 2.2rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 5rem;
+  padding-bottom: 2rem;
+  overflow: auto;
+
+}
+
+.conversationHandlers {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 72px;
+  grid-gap: 2rem;
+  border-top: 2px solid #1C8EF9;
+}
+
+.conversations {
+  margin-top: 2rem;
+  width: auto;
+  height: auto;
+}
+
+.conversation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.conversationHandlers button {
+  height: 100%;
+}
+
+.message {
+  word-break: keep-all;
+  margin-bottom: 0.25rem;
+}
+
+.others {
+  color: #174de2;
+  font-weight: bold;
+}
+
+.me {
+  color: #02ce02;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1500px) and  (min-width: 900px) {
+  .custombox {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 899px) and  (min-width: 600px) {
+  .custombox {
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .navbar-nav, .navbar-brand {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+
+  .text {
+    font-size: 14.5px;
+  }
+
+  .conversationInterior, .conversationHandlers {
+    font-size: 13px;
+  }
+
+  .custombox {
+    width: 80vw;
+  }
+}
